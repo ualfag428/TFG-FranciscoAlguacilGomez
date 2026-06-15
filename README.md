@@ -1046,17 +1046,6 @@ Observación técnica: en el archivo `TRANSFORMER_168.py` aparece una línea sue
 - El uso de `validation_data=(X_test, y_test)` implica que el test actúa también como validación. Para una comparación final más estricta, convendría crear tres bloques: entrenamiento, validación y test.
 - La radiación se predice y se evalúa, aunque varias figuras se centran solo en temperatura, presión, humedad y viento.
 
-## Observaciones de mantenimiento
-
-Para mejorar la calidad del proyecto como entrega final se recomienda:
-
-- Parametrizar rutas de entrada y salida en lugar de usar rutas absolutas.
-- Unificar nombres de archivos y evitar duplicados históricos.
-- Guardar métricas en `.csv` o `.json`, además de imprimirlas por consola.
-- Corregir textos mal codificados como `PredicciÃ³n` o `Â°C`.
-- Eliminar la línea `=` de `TRANSFORMER_168.py` antes de ejecutar.
-- Separar funciones reutilizables en módulos: carga de datos, ventanas, modelo, métricas y visualización.
-- Añadir un script maestro para lanzar todos los experimentos de forma homogénea.
 
 ## Reproducibilidad
 
